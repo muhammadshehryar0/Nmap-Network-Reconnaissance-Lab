@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Sun May 24 14:26:47 2026 as: /usr/lib/nmap/nmap -A -T4 -oA full_scan_report 192.168.100.1
+Host: 192.168.100.1 ()	Status: Up
+Host: 192.168.100.1 ()	Ports: 21/filtered/tcp//ftp///, 22/filtered/tcp//ssh///, 23/open/tcp//telnet//Huawei Home Gateway telnetd/, 53/open/tcp//domain//(unknown banner: Forbidden)/, 80/open/tcp//ssl|http///	Ignored State: closed (995)	OS: Linux 3.5	Seq Index: 264	IP ID Seq: All zeros
+# Nmap done at Sun May 24 14:27:54 2026 -- 1 IP address (1 host up) scanned in 66.55 seconds

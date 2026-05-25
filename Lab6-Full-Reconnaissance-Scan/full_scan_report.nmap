@@ -1,0 +1,44 @@
+# Nmap 7.98 scan initiated Sun May 24 14:26:47 2026 as: /usr/lib/nmap/nmap -A -T4 -oA full_scan_report 192.168.100.1
+Nmap scan report for 192.168.100.1
+Host is up (0.0096s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT   STATE    SERVICE  VERSION
+21/tcp filtered ftp
+22/tcp filtered ssh
+23/tcp open     telnet   Huawei Home Gateway telnetd
+53/tcp open     domain   (unknown banner: Forbidden)
+| dns-nsid: 
+|_  bind.version: Forbidden
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     version
+|     bind
+|_    Forbidden
+80/tcp open     ssl/http
+|_http-title: Site doesn't have a title (text/html).
+| ssl-cert: Subject: commonName=Huawei Technologies Co., Ltd/organizationName=Huawei Technologies Co., Ltd/stateOrProvinceName=Guangdong/countryName=CN
+| Not valid before: 2017-09-01T07:57:47
+|_Not valid after:  2027-08-30T07:57:47
+|_ssl-date: 1981-01-01T04:40:41+00:00; -45y143d04h47m11s from scanner time.
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.98%I=7%D=5/24%Time=6A12C466%P=x86_64-pc-linux-gnu%r(DNSV
+SF:ersionBindReqTCP,44,"\0B\0\x06\x85\0\0\x01\0\x01\0\x01\0\0\x07version\x
+SF:04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03\0\0\0\0\0\n\tForbidden\xc0\x0c
+SF:\0\x02\0\x03\0\0\0\0\0\x02\xc0\x0c");
+MAC Address: 70:19:2F:DC:17:39 (Huawei Technologies)
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3.5
+OS details: Linux 3.5
+Network Distance: 1 hop
+Service Info: Device: broadband router
+
+Host script results:
+|_clock-skew: -16579d04h47m11s
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   9.63 ms 192.168.100.1
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun May 24 14:27:54 2026 -- 1 IP address (1 host up) scanned in 66.55 seconds
